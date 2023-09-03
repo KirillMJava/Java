@@ -11,7 +11,7 @@ public class HW_L3 {
         if (a%2==0)
             System.out.println("Число чётное");
         else System.out.println("Число нечётное");
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Task2. enter temperature:");
         Scanner temperature=new Scanner(System.in);
@@ -22,15 +22,15 @@ public class HW_L3 {
             System.out.println("Cold");
         else
             System.out.println("Normal");
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Task3");
         for (int i=10; i<21; i++)
         {
             System.out.print(i*i +" ");
         }
-        System.out.println("");
-        System.out.println("");
+        System.out.println();
+        System.out.println();
 
         System.out.println("Task4");
         int c=7;
@@ -38,8 +38,8 @@ public class HW_L3 {
             System.out.print(c +" ");
             c+=7;
         }
-        System.out.println("");
-        System.out.println("");
+        System.out.println();
+        System.out.println();
 
 
 
