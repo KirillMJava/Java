@@ -27,7 +27,7 @@ public class HW_L3 {
         System.out.println("Task3");
         for (int i=10; i<21; i++)
         {
-            System.out.print(i*i +", ");
+            System.out.print(i*i +" ");
         }
         System.out.println("");
         System.out.println("");
@@ -43,6 +43,29 @@ public class HW_L3 {
 
 
 
+        System.out.println("Task*");
+        Scanner vvodChisla=new Scanner(System.in);
+        System.out.println("Введите ваше число:");
+        if (vvodChisla.hasNextInt()) {
+            int d = vvodChisla.nextInt();
 
+            while (d <= 0) {
+                System.out.println("Введите положительное число");
+                d = vvodChisla.nextInt();
+                if (d > 0) {
+                    System.out.println("Суммирую числа от 1 до "+d+":");
+                    for (int i=1; i<d; i++)
+                    {
+                        System.out.print(i+"+");
+                    }
+                    System.out.println(d);
+                    break;
+                }
+            }
+            vvodChisla.close();
+        }
+        else {
+            System.out.println("Вы ввели не число, попробуйте запустить программу ещё раз");
+        }
     }
 }
