@@ -5,28 +5,18 @@ public class Test {
 
     public static void main(String[] args) {
 
-    Scanner sk=new Scanner(System.in);
-    String a=sk.next();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите число:");
 
+        while (sc.hasNextInt()) {
+            if (sc.hasNextInt()) {
+                int number = sc.nextInt();
+                System.out.println("Спасибо! Вы ввели число " + number);
+                break;
+            } else {
+                System.out.println("Извините, но это явно не число. Попробуйте снова!");
+            }
 
-      switch(a)
-    {
-        case "A" :
-            System.out.println("Отлично!");
-            break;
-        case "B" :
-        case "C" :
-            System.out.println("Отлично выполнено");
-            break;
-        case "D" :
-            System.out.println("Вы прошли");
-        case "E" :
-            System.out.println("Лучше попробуйте снова");
-            break;
-        default :
-            System.out.println("Неверная оценка");
+        }
     }
-      System.out.println("Ваша оценка "+a);
 }
-}
-
