@@ -36,6 +36,16 @@ public class HW_L4 {
                     for (int i=mass.length-1; i>=0; i--){
                         System.out.print(mass[i]+" ");
                     }
+                    System.out.println();
+
+                    System.out.println("Task2");
+                    Arrays.sort(mass);
+                    System.out.println(Arrays.toString(mass));
+                    System.out.println("Min: "+mass[0]+", Max: "+mass[mass.length-1]);
+
+                    System.out.println("Task3");
+
+
 
                 } else if (vybor == 2) {
                         double[] mass2 = new double[massDlinna];
