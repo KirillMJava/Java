@@ -44,7 +44,15 @@ public class HW_L4 {
                     System.out.println("Min: "+mass[0]+", Max: "+mass[mass.length-1]);
 
                     System.out.println("Task3");
-
+                    int indexMax=0;
+                    int indexMin=0;
+                    for (int i=1; i<mass.length; i++){
+                        if (mass[i]>mass[indexMax])
+                            indexMax=i;
+                        else if (mass[i]<mass[indexMin])
+                            indexMin=i;
+                    }
+                    System.out.println("Индекс мин. элемента: "+indexMin+", индекс макс. элемента: "+indexMax);
 
 
                 } else if (vybor == 2) {
