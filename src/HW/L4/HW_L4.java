@@ -54,6 +54,17 @@ public class HW_L4 {
                     }
                     System.out.println("Индекс мин. элемента: "+indexMin+", индекс макс. элемента: "+indexMax);
 
+                    System.out.println("Task4");
+                    int k=0;
+                    for (int i=0; i<mass.length; i++){
+                        if (mass[i]==0)
+                            k++;
+                    }
+                    if (k!=0)
+                        System.out.println("Кол-во нулевых элементов: "+k);
+                    else System.out.println("Нулевых элементов нет");
+
+
 
                 } else if (vybor == 2) {
                         double[] mass2 = new double[massDlinna];
