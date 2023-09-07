@@ -74,6 +74,16 @@ public class HW_L4 {
                     }
                     System.out.println("Массив после замены: "+Arrays.toString(mass));
 
+                    System.out.println("Task6");
+                    int f=0;
+                    for (int i=0; i<mass.length-1; i++){
+                        if (mass[i+1]>mass[i])
+                            f++;
+                    }
+                    if (f==mass.length-1)
+                    System.out.println("Данный массив ЯВЛЯЕТСЯ возрастающей последовательностью");
+                    else System.out.println("Данный массив НЕ является возрастающей последовательностью");
+
 
                 } else if (vybor == 2) {
                         double[] mass2 = new double[massDlinna];
