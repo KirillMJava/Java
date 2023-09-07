@@ -64,6 +64,15 @@ public class HW_L4 {
                         System.out.println("Кол-во нулевых элементов: "+k);
                     else System.out.println("Нулевых элементов нет");
 
+                    System.out.println("Task5");
+                    System.out.println("Текущий массив: "+Arrays.toString(mass));
+                    for (int i=0, i1=mass.length-1; i<mass.length/2; i++){
+                        int d=mass[i];
+                        mass[i]=mass[i1];
+                        mass[i1]=d;
+                        i1--;
+                    }
+                    System.out.println("Массив после замены: "+Arrays.toString(mass));
 
 
                 } else if (vybor == 2) {
