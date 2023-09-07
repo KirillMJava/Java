@@ -1,4 +1,4 @@
 package Lessons;
 
-public class L5 {
+public class L6 {
 }
