@@ -71,26 +71,31 @@ public class HW_L5 {
                 int[][] snake=new int[a][b];
                 int k=0;
                 for (int i=0; i< snake.length; i++) {
-
+                    outer1:
                     if (i%2==0) {
                         for (int j = 0; j < snake[i].length; j++) {
                                 snake[i][j] = k;
                                 k++;
+                                if (snake[i][j]==100)
+                                    break outer1;
                         }
                     } else {
                             for (int j = snake[i].length - 1; j >= 0; j--) {
                                     snake[i][j] = k;
                                     k++;
+                                if (snake[i][j]==100)
+                                    break outer1;
                             }
                     }
                 }
+                outer:
                 for (int i=0; i<snake.length; i++){
                     for (int j=0; j< snake[i].length; j++){
                         if (snake[i][j]<10) {
                             System.out.print(" "+snake[i][j] + " ");
                         } else if (snake[i][j]<100)
                             System.out.print(snake[i][j]+" ");
-                        else break;
+                        else break outer;
                     }
                     System.out.println();
                 }
