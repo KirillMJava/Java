@@ -118,12 +118,29 @@ public class L5 {
         s[1]=" ";
         s[2]="a";
         s[3]=" ";
+        String a=null, b=null;
+        System.out.println(Arrays.toString(s));
+        for (int i=0; i<s.length; i++){
+            if (s[i]==" "){
+                if (s[i+1]!=null & s[i]!=" "){
+                a=s[i+1];
+                s[i+3]=a;
+                }
+                if (s[i+2]!=null & s[i]!=" "){
+                    b=s[i+2];
+                    s[i+4]=b;
+                }
+                s[i]="%";
+                s[i+1]="2";
+                s[i+2]="0";
+            }
+        }
         System.out.println(Arrays.toString(s));
 
 
+
+
     }
-
-
 
 
 }
