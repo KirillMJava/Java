@@ -1,4 +1,4 @@
-package HW.L6;
+package Lessons.L6;
 
 public class Person {
     String fullName;
