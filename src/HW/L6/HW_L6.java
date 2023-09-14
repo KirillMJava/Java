@@ -25,7 +25,7 @@ public class HW_L6 {
         System.out.println("Task*:");
         ATM BPS=new ATM();
         BPS.addToATM(1,10,5);
-        System.out.println(BPS.removingLiquids(1020));
+        System.out.println(BPS.removingLiquids(110));
 
     }
 
