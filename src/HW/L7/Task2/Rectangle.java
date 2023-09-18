@@ -6,11 +6,11 @@ public class Rectangle extends Figure{
     @Override
     void Square() {
     square=length*width;
-        System.out.println(square);
+
     }
 
     @Override
     void Perimeter() {
-
+    perimeter=(length+width)*2;
     }
 }

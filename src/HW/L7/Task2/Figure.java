@@ -2,12 +2,12 @@ package HW.L7.Task2;
 
 public abstract class Figure {
 
-    int length =1;
-    int width=1;
-    int radius;
+    double length =1;
+    double width=1;
+    double radius=3;
 
-    int square;
-    int perimeter;
+    double square;
+    double perimeter;
 
 
     abstract void Square();
