@@ -7,14 +7,14 @@ public class Animal {
     }
 
     public void voice (){
-        System.out.println("My voice:");
+        System.out.println("My pet says:");
     }
     public void eat (String food){
         if (food.equals("Meat") || food.equals("Grass") || food.equals("Bones")){
-            System.out.println("I'm hungry! Let's have breakfast with:");
-        } else System.out.println("Hmmm, I don't like it!!!");
+            System.out.println("Nice choice, let's feed my pets!");
+        } else System.out.println("Please, restart the program with the correct value (Bones/Grass/Meat)");
+                  }
 
-        }
 
     }
 

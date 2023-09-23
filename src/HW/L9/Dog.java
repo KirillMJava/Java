@@ -1,6 +1,6 @@
 package HW.L9;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
     @Override
     public void voice() {
@@ -11,8 +11,14 @@ public class Dog extends Animal{
     @Override
     public void eat(String food) {
         super.eat(food);
-        if (food.equals("Bones")){
-            System.out.println("Mmm, so good!");
-        } else System.out.println("It's not for me, don't u understand?");
+        if (food.equals("Bones")) {
+            voice();
+            System.out.println("Mmmm, really enjoy Bones!");
+            System.out.println();
+        } else if (food.equals("Meat") || food.equals("Grass")) {
+            voice();
+            System.out.println("It's not for me, I like Bones!");
+            System.out.println();
+        }
     }
 }
