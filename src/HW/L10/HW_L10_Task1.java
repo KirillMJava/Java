@@ -9,7 +9,7 @@ public class HW_L10_Task1 {
         System.out.println("Enter number of Strings");
         if (scan2.hasNextInt()) { //Делаем защиту от неверно введённых данных
             int index= scan2.nextInt();
-            //Создаём массив строк в количестве, заданном в консоли, и выводим их поочерёдно:
+            //Создаём массив строк в количестве, заданном в консоли, например 3:
 
             String[] massString = new String[index];
             for (int i = 0; i < index; i++) {
