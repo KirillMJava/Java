@@ -18,6 +18,10 @@ public class TestStringBuilder {
         sb1.reverse();
         System.out.println(sb1);
 
+        sb1.delete(0, 7);
+        sb1.deleteCharAt(0);
+        System.out.println(sb1);
+
 
     }
 
