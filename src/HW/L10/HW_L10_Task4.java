@@ -33,37 +33,54 @@ public class HW_L10_Task4 {
         massChars3=massString[2].toCharArray();
 
         boolean counter=false;
+        outer:
         for (int i=0; i<massChars1.length-1; i++) {
-            for (int j=1; j<i; j++)
+            for (int j=i+1; j<massChars1.length-1; j++)
             {
-                if (massChars1[i] == massChars1[i - 1]) {
+                if (massChars1[i] != massChars1[j]) {
                     counter=false;
                 } else {
-                System.out.println("Строка состоящая ТОЛЬКО из разных символов: " + Arrays.toString(massChars1));
                 counter = true;
-                break;
+                break outer;
                 }
+
             }
         }
-        for (int i=1; i<massChars2.length && !counter; i++) {
-            if (massChars2[i] == massChars2[i - 1]) {
-                counter=false;
-            } else {
-                System.out.println("Строка состоящая ТОЛЬКО из разных символов: "+Arrays.toString(massChars2));
-                counter=true;
-                break;
-            }
+        if (counter) {System.out.println("Строка состоящая ТОЛЬКО из разных символов: " + Arrays.toString(massChars1));
         }
 
-        for (int i=1; i<massChars3.length && !counter; i++) {
-            if (massChars3[i] == massChars3[i - 1]) {
-                counter=false;
-            } else {
-                System.out.println("Строка состоящая ТОЛЬКО из разных символов: "+Arrays.toString(massChars3));
-                counter=true;
-                break;
+
+        outer:
+        for (int i=0; i<massChars2.length-1; i++) {
+            for (int j=i+1; j<massChars2.length-1; j++)
+            {
+                if (massChars2[i] != massChars2[j]) {
+                    counter=false;
+                } else {
+                    counter = true;
+                    break outer;
+                }
+
             }
         }
+        if (counter)
+            System.out.println("Строка состоящая ТОЛЬКО из разных символов: " + Arrays.toString(massChars1));
+
+        outer:
+        for (int i=0; i<massChars3.length-1; i++) {
+            for (int j=i+1; j<massChars3.length-1; j++)
+            {
+                if (massChars3[i] != massChars3[j]) {
+                    counter=false;
+                } else {
+                    counter = true;
+                    break outer;
+                }
+
+            }
+        }
+        if (counter)
+            System.out.println("Строка состоящая ТОЛЬКО из разных символов: " + Arrays.toString(massChars1));
 
 
 
