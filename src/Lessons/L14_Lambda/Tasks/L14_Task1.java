@@ -1,4 +1,4 @@
-package Lessons.L14.Tasks;
+package Lessons.L14_Lambda.Tasks;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

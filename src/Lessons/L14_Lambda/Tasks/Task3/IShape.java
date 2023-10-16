@@ -1,4 +1,4 @@
-package Lessons.L14.Tasks.Task3;
+package Lessons.L14_Lambda.Tasks.Task3;
 
 @FunctionalInterface
 public interface IShape {

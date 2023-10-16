@@ -1,4 +1,4 @@
-package Lessons.L14.Tasks.Task4;
+package Lessons.L14_Lambda.Tasks.Task4;
 
 public class L14_Task4 {
     public static void main(String[] args) {

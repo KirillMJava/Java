@@ -1,4 +1,4 @@
-package Lessons.L14.Test;
+package Lessons.L14_Lambda.Test;
 
 @FunctionalInterface
 public interface Func_Int {
