@@ -17,10 +17,10 @@ public class Main {
         }
         System.out.println("Изначальный список: "+integers);
 
-        Optional<Integer> result=integers.stream()
+        List<Integer> result;
+        result = integers.stream()
                 .distinct()
-                .filter(i -> i % 2 == 0 && i!=0)
-                .reduce();
+                .filter(i -> i % 2 == 0 && i != 0).collect(Collectors.toList());
 
         System.out.println("Сумма эл-тов коллекции просле всех операций: "+result);
 
